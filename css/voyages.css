@@ -71,7 +71,7 @@ nav {
             list-style: none;  
             position: relative;    
             left: 115px;  
-            top: -40px;
+            top: -41px;
             margin-top: 10%;  
         }  
    
@@ -110,4 +110,30 @@ nav {
     text-align: center;
     fill: white;
 }
+
+li::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  li:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  li::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(47, 100%, 63%);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  li {
+    position: relative;
+  }
+  
 

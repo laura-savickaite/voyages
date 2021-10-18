@@ -6,12 +6,17 @@
     list-style: none;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 #videoaccueil {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
   }
 
 .accueil_content {
@@ -30,164 +35,76 @@
     font-family: 'Fjalla One', sans-serif;
     font-size: 150px;
     color: rgb(255, 255, 255);
-    margin-left: 40%;
-    margin-top: 10%;
+    margin-left: 33%;
+    margin-top: 8%;
+    letter-spacing: 4px;
 }
 
-.divMenu, ul, li, li li {  
+nav {
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+#divMenu, ul, li, li li {  
     margin: 0;  
     padding: 0;  
 }  
    
-.divMenu {  
+#divMenu {  
     width: 150px;  
     height: 27px;  
 }  
    
-.divMenu ul  
+#divMenu ul  
 {  
      line-height: 25px;  
 }  
    
-.divMenu li {  
+#divMenu li {  
         list-style: none;  
-        position: relative;    
+        position: relative;
+        margin-top: 30%;   
     }  
    
-.divMenu li li {  
+#divMenu li li {  
             list-style: none;  
-            position: relative;   
-            left: 148px;  
-            top: -27px;  
+            position: relative;    
+            left: 115px;  
+            top: -40px;
+            margin-top: 10%;  
         }  
    
    
-.divMenu ul li a {  
+#divMenu ul li a {  
         width: 148px;  
         height: 25px;  
         display: block;  
         text-decoration: none;  
         text-align: center;  
         font-family: 'Oswald', sans-serif;  
-        color:#ffffff;    
+        color:#ffffff; 
+        font-size: 130%; 
     }  
    
-.divMenu ul ul {  
+#divMenu ul ul {  
         position: absolute;  
         visibility: hidden;  
         top: 27px;  
     }  
    
-.divMenu ul li:hover ul {  
+#divMenu ul li:hover ul {  
         visibility: visible;  
     }  
    
-.divMenu a:hover {  
+   
+#divMenu a:hover {  
         font-weight: bold;  
     }
 
-.divMenu, ul, li, li li {  
-    margin: 0;  
-    padding: 0;  
-}  
-   
-.divMenu {  
-    width: 150px;  
-    height: 27px;  
-}  
-   
-.divMenu ul  
-{  
-     line-height: 25px;  
-}  
-   
-.divMenu li {  
-        list-style: none;  
-        position: relative;    
-    }  
-   
-.divMenu li li {  
-            list-style: none;  
-            position: relative;   
-            left: 148px;  
-            top: -27px;  
-        }  
-   
-   
-.divMenu ul li a {  
-        width: 148px;  
-        height: 25px;  
-        display: block;  
-        text-decoration: none;  
-        text-align: center;  
-        font-family: 'Oswald', sans-serif;  
-        color:#ffffff;    
-    }  
-   
-.divMenu ul ul {  
-        position: absolute;  
-        visibility: hidden;  
-        top: 27px;  
-    }  
-   
-.divMenu ul li:hover ul {  
-        visibility: visible;  
-    }  
-   
-.divMenu a:hover {  
-        font-weight: bold;  
-    }
+.image {
+    position:absolute;
+    z-index: 100;
+    width: 100px;
+    transform: translate(630px,600px);
+}
 
-/* DEUXIEME NAV */
-
-.divMenubis, ul, li, li li {  
-    margin: 0;  
-    padding: 0;  
-}  
-   
-.divMenubis {  
-    width: 150px;  
-    height: 27px;  
-}  
-   
-.divMenubis ul  
-{  
-     line-height: 25px;  
-}  
-   
-.divMenubis li {  
-        list-style: none;  
-        position: relative;    
-    }  
-   
-.divMenubis li li {  
-            list-style: none;  
-            position: relative;   
-            left: 148px;  
-            top: -27px;  
-        }  
-   
-   
-.divMenubis ul li a {  
-        width: 148px;  
-        height: 25px;  
-        display: block;  
-        text-decoration: none;  
-        text-align: center;  
-        font-family: 'Oswald', sans-serif;  
-        color:#ffffff;    
-    }  
-   
-.divMenubis ul ul {  
-        position: absolute;  
-        visibility: hidden;  
-        top: 27px;  
-    }  
-   
-.divMenubis ul li:hover ul {  
-        visibility: visible;  
-    }  
-   
-.divMenubis a:hover {  
-        font-weight: bold;  
-    }

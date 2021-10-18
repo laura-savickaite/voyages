@@ -1,1 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  
+}
+.img_float_low {
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-start;
+    
+    
+}
 
+.desc::before{
+    content:url("../assets/")
+}
+
+.img_float_low img{
+    width: 40%;
+    height: 40%;
+    margin-top: 2vh;
+}
+
+.prez_low{
+    width: 50vh;
+    height: 50vh;
+}
+.accueil_low{
+    background: url("../assets/fond.jpg") no-repeat fixed center;
+    height: 100vh; 
+    display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: flex-start;
+    
+    
+}
+
+
+
+.apostrophe_start{
+    width: 40px;
+    height: 40px;
+    float: left;
+    mix-blend-mode: multiply;
+}
+.apostrophe_end{
+    width: 40px;
+    height: 40px;
+    float: right;
+    mix-blend-mode: multiply;
+}

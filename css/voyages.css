@@ -15,8 +15,9 @@
         align-items: center;
         align-content: flex-start;
         mix-blend-mode: multiply;
-    
+        
 }
+
 
 .desc::before{
     content:url("../assets/");
@@ -29,12 +30,21 @@
     
 }
 
+.intitule{
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    margin-bottom: 10%;
+}
+
 
 .img_float_low img{
     width: 35%;
     height: 35%;
     margin-top: 2%;
+   
 }
+
+
 
 .prez_low{
     width: 40%;

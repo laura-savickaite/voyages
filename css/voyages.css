@@ -173,10 +173,11 @@ nav ul ul ul li {
 
 .img_float_low{
     height: 50%;
+    margin-bottom: 6%;
 }
 .img_float_low img{
-    width: 35%;
-    height: 35%;
+    width: 60%;
+    height: 60%;
     margin-top: 2%;
     z-index: 0;
 }

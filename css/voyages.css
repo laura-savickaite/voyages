@@ -120,17 +120,17 @@ nav ul ul ul li {
     margin-bottom: -40%;
 }
 
-  a::before {  
+.hover_nav::before {  
     transform: scaleX(0);
     transform-origin: bottom right;
   }
   
-  a:hover::before {
+.hover_nav:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
   
-  a::before {
+.hover_nav::before {
     content: " ";
     display: block;
     position: absolute;
@@ -144,10 +144,10 @@ nav ul ul ul li {
 .arrowdown {
     position:absolute;
     z-index: 100;
-    width: 100px;
-    transform: translate(650px,650px);
+    width: 10%;
     text-align: center;
     fill: white;
+    transform: translate(650px, -300px);
 }
 
 
@@ -364,7 +364,7 @@ button {
     align-items: center;
     height: 5vh;
     background-color: rgb(255, 255, 255);
-    margin: 1% 0 1% 1%;
+    /* margin: 1% 0 1% 1%; */
     font-family: 'Fjalla One', sans-serif;
 }
 
@@ -376,8 +376,8 @@ button {
 .b_footer_copyright {
     height: 10px;
     width: 10px;
-    margin-left: 0.6%;
-    margin-top: 0.1%;
+    /* margin-left: 0.6%;
+    margin-top: 0.1%; */
 }
 .bobart{
     height: 100vh;
@@ -385,4 +385,8 @@ button {
 
 .bobfooter{
     height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
 }

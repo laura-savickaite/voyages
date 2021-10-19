@@ -123,7 +123,6 @@
     align-items: center;
     height: 5vh;
     background-color: rgb(255, 255, 255);
-    /* margin-left: 1%; */
     margin: 1% 0 1% 1%;
     font-family: 'Fjalla One', sans-serif;
 }
@@ -131,7 +130,6 @@
 .b_about_go_back-btn > img {
     height: 40px;
     transform: translate(0, -20px);
-    fill: ;
 }
 
 .b_footer_copyright {

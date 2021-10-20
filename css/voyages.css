@@ -1,11 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-  
-}
+
 .img_float_low {
    
         display: flex;
@@ -198,7 +191,7 @@ nav ul ul ul li {
 	justify-content: space-evenly;
 	align-items: center;
 	align-content: flex-start;
-
+    
     
 }
 
@@ -386,3 +379,5 @@ button {
 .bobfooter{
     height: 5vh;
 }
+
+

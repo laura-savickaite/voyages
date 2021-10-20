@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+.chefbody{
+    background-color: sienna;
+    height: 100vh;
+    width: 100%;
+}
+
+.menuderoulant{
+    margin: 0 auto;
+}
+
+.struct{
+    height: 60px;
+    background: skyblue ;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.struct ul{
+    padding: 0;
+    margin: 0;
+   
+    margin-right: 30px
+}
+
+.struct ul li{
+    
+    position: relative;
+    display: inline-block;
+}
+
+.struct ul li a {
+    display: block;
+    padding: 0 15px;
+    color: seagreen;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.struct ul li a:hover{
+    background: slateblue;
+}
+
+.struct .navbar ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+.struct .navbar li:hover > ul {
+    display: block;
+}
+
+.struct .navbar ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+.struct .navbar ul ul li{
+    position: relative;
+    top: -60px;
+    Left: 150px;
+}

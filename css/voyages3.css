@@ -7,12 +7,43 @@
 }
 
 body {
-    background-color: white;
+    /* background-color: white; */
+    width: 100%;
 }
 
+body::before {
+	animation: grain 8s steps(10) infinite;
+	background-image: url(/Images/noise.png);
+	content: '';
+	height: 300%;
+	left: -50%;
+	opacity: 0.6;
+	position: fixed;
+	top: -100%;
+	width: 300%;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0); }
+  10% { transform:translate(-5%, -10%); }
+  20% { transform:translate(-15%, 5%); }
+  30% { transform:translate(7%, -25%); }
+  40% { transform:translate(-5%, 25%); }
+  50% { transform:translate(-15%, 10%); }
+  60% { transform:translate(15%, 0%); }
+  70% { transform:translate(0%, 15%); }
+  80% { transform:translate(3%, 35%); }
+  90% { transform:translate(-10%, 10%); }
+}
+
+.b_header_Rey {
+    height: 10vh;
+}
+
+        /*              NAV              */
 nav {
-    background: rgb(255, 255, 255);
-    height: 60px;
+    /* background: rgb(255, 255, 255); */
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +62,7 @@ nav ul li a {
     font-family: 'Oswald', sans-serif;  
     font-size: 110%; 
     color: rgb(0, 0, 0);
-    background: white;
+    /* background: white; */
 }
 
 nav ul ul{
@@ -62,3 +93,5 @@ nav ul ul ul li {
     top: -30px;
     left: 150px;
 }
+
+            /*         MAIN              */

@@ -65,23 +65,23 @@ body {
     margin: 0 auto;
 } */
 
-nav {
+.navaccueil {
     margin-top: 70%;
     margin-left: 30%;
 }
 
-nav ul {
+.navaccueil ul {
     float: left;
     /* line-height: 90px;  */
 }
 
-nav ul li {
+.navaccueil ul li {
     position: relative;
     display: block;
     margin-top: 40%;
 }
 
-nav ul li a {
+.navaccueil ul li a {
     width: 148px;  
     /* height: 25px;   */
     display: block;  
@@ -91,23 +91,23 @@ nav ul li a {
     font-size: 130%; 
 }
 
-nav ul ul{
+.navaccueil ul ul{
     position: absolute;
     left: 150px; 
     top: -150px;
     display: none;
 }
 
-nav ul li:hover >ul{
+.navaccueil ul li:hover >ul{
     display: block;
 }
 
-nav ul ul li {
+.navaccueil ul ul li {
     float: none;
     position: relative;
 }
 
-nav ul ul ul li {
+.navaccueil ul ul ul li {
     position: relative;
     top: 90px;
     margin-bottom: -40%;
@@ -123,7 +123,7 @@ nav ul ul ul li {
     transform-origin: bottom left;
   }
   
-  a::before {
+ .navaccueil a::before {
     content: " ";
     display: block;
     position: absolute;
@@ -194,7 +194,6 @@ nav ul ul ul li {
     
     
 }
-
 
 .apostrophe_start{
     width: 40px;

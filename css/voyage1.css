@@ -129,6 +129,7 @@ main {
 
 p {
     text-align: justify;
+    font-family: 'PT Sans', sans-serif;
     
 }
 
@@ -162,8 +163,8 @@ p {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
     height: 40%;
     width: 40%;
 }
@@ -178,7 +179,7 @@ p {
     display: flex;
     flex-direction: row;
     margin: 180px;
-    margin-top: 20%;
+    margin-top: 13%;
 }
 
 .txtplace {
@@ -249,7 +250,7 @@ p {
     transition: transform 0.4s ease-in-out;
 }
             
-#button_a:checked ~ #carousel .p-wrapper {
+#button_a:checked ~ #carousel .p-wrapper .imgtest {
     -webkit-transform: translateY(0);
     transform: translateY(0); 
 }
@@ -309,5 +310,12 @@ p {
      background-color: #222;
 }
 
-/* CAROUSEL ESSAI */
-
+#testimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#imgruehp {
+    /* margin-top: -7.5%; */
+    border-radius: 3px;
+}

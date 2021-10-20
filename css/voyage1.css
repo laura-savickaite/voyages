@@ -10,6 +10,8 @@ body {
     background-color: white;
 }
 
+/* NAVIGATION */
+
 nav {
     background: rgb(255, 255, 255);
     height: 60px;
@@ -63,7 +65,7 @@ nav ul ul ul li {
     left: 150px;
 }
 
-
+/* HEADER */
 
 #videointro {
     position: fixed;
@@ -100,7 +102,7 @@ h1 {
     font-family: 'Fjalla One', sans-serif;
 }
 
-
+/* MAIN */
 
 main {
     z-index: 100;
@@ -109,10 +111,20 @@ main {
     background-color: white;
 }
 
-hr {
+/* hr {
     transform: translate(390%, -240px);
     width: 150px;
     color: rgba(88, 87, 87, 0.014);
+} */
+
+/* PREMIERE PARTIE DU MAIN */
+
+#titre01 {
+    color: rgba(218, 218, 218, 0.767);
+    font-family: 'DM Serif Display', serif;
+    font-size: 37px;
+    letter-spacing: -2px;
+    margin-left: 7%;
 }
 
 #howandwhat {
@@ -124,4 +136,6 @@ hr {
     display: flex;
     flex-direction: column;
     margin: 20px;
+    margin-left: 6%;
+    margin-right: 6%;
 }

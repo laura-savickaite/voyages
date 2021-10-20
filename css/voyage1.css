@@ -7,13 +7,18 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(250, 246, 242);
 }
+
+
+
+
+
 
 /* NAVIGATION */
 
 nav {
-    background: rgb(255, 255, 255);
+    background: rgb(250, 246, 242);
     height: 60px;
     display: flex;
     justify-content: center;
@@ -32,8 +37,8 @@ nav ul li a {
     text-align: center;  
     font-family: 'Oswald', sans-serif;  
     font-size: 110%; 
-    color: rgb(0, 0, 0);
-    background: white;
+    color: rgb(54, 43, 75);
+    background: rgb(250, 246, 242);
 }
 
 nav ul ul{
@@ -65,6 +70,11 @@ nav ul ul ul li {
     left: 150px;
 }
 
+
+
+
+
+
 /* HEADER */
 
 #videointro {
@@ -78,7 +88,7 @@ nav ul ul ul li {
   .intro {
     position: absolute;
     top: 70%;
-    background: white;
+    background: rgb(250, 246, 242);
     width: 100%;
     height: 50%;
     padding: 10px;
@@ -100,7 +110,13 @@ h1 {
     font-size: 350%;
     letter-spacing: 30px;
     font-family: 'Fjalla One', sans-serif;
+    color: rgb(56, 44, 73);
 }
+
+
+
+
+
 
 /* MAIN */
 
@@ -108,7 +124,7 @@ main {
     z-index: 100;
     margin-top: 60%;
     padding-top: 10%;
-    background-color: white;
+    background-color: rgb(250, 246, 242);
 }
 
 /* hr {
@@ -117,10 +133,15 @@ main {
     color: rgba(88, 87, 87, 0.014);
 } */
 
+
+
+
+
+
 /* PREMIERE PARTIE DU MAIN */
 
 #titre01 {
-    color: rgba(218, 218, 218, 0.767);
+    color: rgba(161, 113, 94, 0.767);
     font-family: 'DM Serif Display', serif;
     font-size: 37px;
     letter-spacing: -2px;
@@ -136,6 +157,202 @@ main {
     display: flex;
     flex-direction: column;
     margin: 20px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+
+
+
+
+/* SECONDE PARTIE DU MAIN */
+
+.placesto {
+    display: flex;
+    flex-direction: row;
+    margin: 180px;
+    margin-top: 20%;
+}
+
+.txtplace {
     margin-left: 6%;
     margin-right: 6%;
 }
+
+#sstitretxt {
+    color: rgba(182, 128, 107, 0.767);
+    font-family: 'DM Serif Display', serif;
+    font-size: 37px;
+    letter-spacing: -2px;
+}
+
+.placestobis {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 180px;
+    margin-top: -10%;
+}
+
+#sstitretxtbis {
+    color: rgba(194, 136, 113, 0.767);
+    font-family: 'DM Serif Display', serif;
+    font-size: 37px;
+    letter-spacing: -2px;
+}
+
+
+
+
+
+/* TROISIEME PARTIE DU MAIN - CAROUSEL */
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -10%;
+}
+            
+#carousel, #navigation {
+    flex: initial;
+    display: block;
+}
+            
+#carousel {
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+            
+.p-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+            
+#button_a:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); 
+}
+            
+#button_b:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); 
+}
+
+#button_c:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%); 
+}
+
+#button_d:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%); 
+}
+            
+[class^="panel_"] {
+    overflow: auto;
+    position: relative;
+    width: inherit;
+    height: inherit;
+    padding: 48px;
+}
+            
+#navigation {
+    margin-left: 24px;
+}
+
+[class^="label_"] {
+    display: block;
+    cursor: pointer;
+    margin: 8px 0;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 4px;
+    color: #aaa;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+            
+[class^="label_"]:hover {
+    color: #444;
+    background-color: #ffeed9;
+}
+            
+#button_a:checked ~ #navigation .label_a,
+#button_b:checked ~ #navigation .label_b,
+#button_c:checked ~ #navigation .label_c,
+#button_d:checked ~ #navigation .label_d {
+     cursor: default;
+     color: #fff;
+     background-color: #222;
+}
+
+
+
+
+
+/* PARTIE PHOTO FLEXED */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  li {
+    height: 40vh;
+    flex-grow: 1;
+  }
+  
+  li:last-child {
+    // There's no science in using "10" here. In all my testing, this delivered the best results.
+    flex-grow: 10;
+  }
+  
+  img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
+  
+  // ADVANCED
+  
+  // Portrait
+  
+  @media (max-aspect-ratio: 1/1) {
+    li {
+      height: 30vh;
+    }
+  }
+  
+  // Short screens
+  
+  @media (max-height: 480px) {
+    li {
+      height: 80vh;
+    }
+  }
+  
+  // Smaller screens in portrait
+  
+  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    ul {
+      flex-direction: row;
+    }
+  
+    li {
+      height: auto;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      max-height: 75vh;
+      min-width: 0;
+    }
+  }

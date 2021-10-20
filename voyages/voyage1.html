@@ -4,25 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/voyage1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/voyages.css">
+    <link rel="stylesheet" href="/css/voyage1.css">
     <title>edimbourg</title>
 </head>
 <body>
     <nav>
-
-    </nav>
-
-    <div id="video">
-        <video autoplay muted loop id="videointro">
-            <source src="Images/edinburghbynight.mp4" type="video/mp4">
-        </video>
+      <div id="dropdown">        
+        <nav>   
+                <ul>    
+                    <li><a href="#">Accueil</a></li>    
+                    <li><a href="#">A propos du site</a></li>    
+                    <li><a href="#">A propos de nous</a></li>     
+                    <li><a href="#">Continents</a>    
+                        <ul>    
+                            <li><a href="#">Afrique</a>
+                                <ul>
+                                    <li><a href="#">Chefchaoun</a></li> 
+                                </ul>
+                            </li> 
+                            <li><a href="#">Amérique</a></li>
+                            <li><a href="#">Asie</a></li>
+                            <li><a href="#">Europe</a>
+                                <ul>
+                                    <li><a href="#">Edimbourg</a></li>
+                                    <li><a href="#">Reykjavik</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Océanie</a></li> 
+                        </ul>
+                    </li>    
+                    <li><a href="#">Guides</a>
+                        <ul>    
+                            <li><a href="#">Laura</a>
+                                <ul>
+                                    <li><a href="#">Chefchaoun</a></li> 
+                                </ul>
+                            </li> 
+                            <li><a href="#">Boris</a>
+                                <ul>
+                                    <li><a href="#">Reykjavik</a></li> 
+                                </ul>
+                            </li>
+                            <li><a href="#">Laura</a>
+                                <ul>
+                                    <li><a href="#">Edimbourg</a></li> 
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> 
+                    
+                </ul>    
+        </nav>
     </div>
+    </nav>
     <header>
-        MUSIQUE
-        <section id="intro">
+
+      <div id="video">
+        <video autoplay muted loop id="videointro">
+            <source src="/Images/edinburghbynight.mp4" type="video/mp4">
+        </video>
+      </div>
+
+        <section class="intro">
             <h1>EDIMBOURG</h1>
             <p id="introtxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore doloremque ut repellat iure, mollitia maiores nostrum delectus perferendis unde iusto architecto nam ratione nemo, quidem provident deleniti voluptas dignissimos minus!</p>
         </section>
+
     </header>
 
     <main>
@@ -65,7 +119,6 @@
                 <div class="p-wrapper">
                             
                     <section class="panel_a">
-                        <h1>Basic Vertical CSS Carousel Demo</h1>
                         <h2>Panel a</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare faucibus diam id maximus. Fusce at efficitur nunc. Curabitur sed ullamcorper orci. Nam nulla enim, ultricies nec lectus a, commodo volutpat nisi. Pellentesque facilisis lacinia ante, eu pulvinar ante varius a. Fusce tincidunt efficitur tempor. Praesent pretium felis consectetur posuere sagittis. Sed luctus nisl non vestibulum semper. Vivamus mi velit, porttitor ac malesuada at, vulputate venenatis augue.</p>
                         <p>Morbi faucibus, nisi ac vulputate mattis, turpis tortor maximus nibh, nec interdum lectus sem sit amet enim. Integer non nulla vitae ex gravida egestas. Fusce sodales neque ut erat tempor euismod. Quisque imperdiet rhoncus pellentesque. Fusce vitae efficitur dolor, nec laoreet lacus. Nulla orci purus, cursus sit amet posuere ac, ultrices sed dui. Ut bibendum, dui non euismod lobortis, mi neque pretium lacus, in pulvinar libero mauris eu sem. Morbi ut felis finibus, posuere risus sit amet, malesuada leo.</p>
@@ -98,8 +151,8 @@
                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ut eleifend lacus. Sed fringilla ullamcorper justo, porttitor cursus nisl. Sed et mi aliquet, rutrum erat at, porttitor felis. Mauris consequat mauris id posuere dictum. Proin nec congue purus, nec rhoncus justo. Cras sit amet neque eu ex feugiat auctor at dignissim augue. Sed commodo tellus id erat lobortis, sit amet elementum felis commodo. Ut massa diam, tristique vel lacinia sed, vulputate eget mauris. Fusce lacinia bibendum iaculis.</p>
                     </section>
                             
-                </div> <!-- // .p-wrapper -->
-            </div> <!-- // #carousel -->            
+                </div> 
+            </div>            
                     
             
             <div id="navigation">
@@ -107,7 +160,7 @@
                 <label for="button_b" class="label_b"> <span>b</span> </label>
                 <label for="button_c" class="label_c"> <span>c</span> </label>
                 <label for="button_d" class="label_d"> <span>d</span> </label>
-            </div> <!-- // #navigation -->               
+            </div>               
                     
             
         </div>
@@ -231,12 +284,11 @@
             <li>
               <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05480_zkw8sm.jpg" alt="Jordan and Sarah looking at the menu in a coffee shop" loading="lazy">
             </li>
-            <!--  Adding an empty <li> here so the final photo doesn't stretch like crazy. Try removing it and see what happens!  -->
             <li></li>
           </ul>
         </article>
     </main>
 
-    <footer>LITTLE TRAVELERS</footer>
+    <!-- <footer>LITTLE TRAVELERS</footer> -->
 </body>
 </html>

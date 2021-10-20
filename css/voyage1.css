@@ -96,12 +96,32 @@ nav ul ul ul li {
 
 h1 {
     font-size: 350%;
-    letter-spacing: 10px;
+    letter-spacing: 30px;
+    font-family: 'Fjalla One', sans-serif;
 }
+
+
 
 main {
     z-index: 100;
     margin-top: 60%;
     padding-top: 10%;
     background-color: white;
+}
+
+hr {
+    transform: translate(390%, -240px);
+    width: 150px;
+    color: rgba(88, 87, 87, 0.014);
+}
+
+#howandwhat {
+    display: flex;
+    flex-direction: row;
+}
+
+.txthow {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
 }

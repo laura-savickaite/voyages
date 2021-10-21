@@ -145,8 +145,7 @@ main {
 
 p {
     text-align: justify;
-    font-family: 'PT Sans', sans-serif;
-    
+    font-family: 'Barlow', sans-serif;   
 }
 
 
@@ -161,6 +160,10 @@ p {
     display: flex;
     flex-direction: row;
     margin: 10%;
+}
+
+.italic {
+    color: rgb(226, 213, 29);
 }
 
 #titresom {
@@ -179,11 +182,15 @@ p {
     padding:2%;
 }
 
+#textesommaire {
+    color: rgb(230, 230, 230);
+}
+
 .wrapper{
     display:flex;
     align-items: center; 
     justify-content: center;
-    margin-left: 30%;
+    margin-left: 25%;
 }
 
 .wrapper .card {
@@ -193,9 +200,9 @@ p {
     border-radius: 60px 20px 60px 20px;
     border-color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: column;
     align-items: center;
-    padding:20px;
+    padding:5px;
     position: absolute;
     opacity: 0;
     pointer-events: none;
@@ -213,7 +220,7 @@ p {
         transform: translateX(100%) scale(1);
     }
     5%, 20%{
-        opacity: 0.4;
+        opacity: 0;
         transform: translateX(100%) scale(1);
     }
     25%, 40%{
@@ -222,11 +229,11 @@ p {
         transform: translateX(0%) scale(1);
     }
     45%, 60%{
-        opacity: 0.5;
+        opacity: 0;
         transform: translateX(-100%) scale(1);
     }
     65%, 100% {
-        opacity: 0.5;
+        opacity: 0;
         transform: translateX(-100%) scale(1);
     }
 }
@@ -237,28 +244,27 @@ p {
 }
 
 .wrapper .card .img {
-    height: 90px;
-    width: 90px; 
-    position: absolute;
-    top:-5px;
-    background: white;
-    border-radius: 50%;
-    padding: 5px;
+    height: 60px;
+    width: 60px; 
+    margin-left: 30%;
 }
+
 .card .img img {
     height: 100%;
     width:100%;
-    border-radius: 50%;
     /* POUR QUE L'IMAGE NE SOIT PAS DISTORT */
     object-fit: cover;
 }
 
 .card .details {
-    margin-top: 60px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
 }
 
 .name {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .details p {
@@ -268,29 +274,60 @@ p {
 .card a {
     text-decoration: none;
     background: rgb(47, 79, 187);
-    padding: 7px 15px;
+    padding: 7px 5px;
     border-radius: 25px;
     color: white;
+    text-align: center;
+    margin-top: 20px;
 }
-
 
 
 /* PREMIERE PARTIE DU MAIN */
 
 #titre01 {
-    color: rgba(161, 113, 94, 0.767);
-    font-family: 'DM Serif Display', serif;
-    font-size: 37px;
-    letter-spacing: -2px;
+    color: rgba(12, 12, 12, 0.767);
+    font-family: 'Inconsolata', monospace;
+    font-size: 170px;
     margin-left: 7%;
+    position: relative;
 }
 
-#howandwhat {
+.numero2 {
+    background-color: rgb(47, 79, 187);
+    height: 100vh;
+}
+
+#fondpourtxt {
+    height:70vh;
+    width: 100vh;
     display: flex;
     flex-direction: row;
+    background-color: rgb(238, 238, 238);
+    margin-left: 25%;
 }
+/* #fondpourtxt:after {
+    content: "";
+    background-image: url("/Images/noiseeffect.jpeg");
+    height: 300%;
+    width: 300%;
+    opacity: 0.7;
+    position: fixed;
+    animation: grain 8s steps(10) infinite;
+}
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+  } */
 
-.txthow {
+/* .txthow {
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -298,7 +335,7 @@ p {
     margin-right: 5%;
     height: 40%;
     width: 40%;
-}
+} */
 
 
 

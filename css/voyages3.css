@@ -19,6 +19,8 @@ body {
     scroll-behavior: smooth;
 }
 
+                    /*              FIRST PART           */
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
@@ -93,6 +95,7 @@ body {
 .b_righ_black_box_arrow:hover {
     transform: rotate(90deg);
     transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .b_righ_black_img {
@@ -187,11 +190,8 @@ nav ul ul ul li {
 
 ul li a:hover {
     color: red;
-}
-            /*              NAV              */ 
-
- 
-            /*         MAIN             */
+} 
+            /*         SECOND PART            */
 
 .b_main_Rey {
     height: 100vh;
@@ -263,4 +263,113 @@ ul li a:hover {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
+}
+
+                /*          THIRD PART       */
+
+.b_third_part_Rey {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    gap: 0.1%;
+}
+
+.b_third_part_left_Rey {
+    grid-column: 1 / 9;
+    grid-row: 1 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b_third_part_right_Rey {
+    grid-column: 9 / 25;
+    grid-row: 2 / 9;
+    background-color: black;
+
+}
+
+.b_third_part_top_Rey {
+    grid-column: 9 / 25;
+    grid-row: 1/ 2;
+    background-color: black;
+}
+
+.b_third_part_form_btn {
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: black;
+    padding: 8%;
+}
+
+.b_third_part_form_send {
+    margin-top: 20%;
+    padding: 5% 42%;
+    font-family: 'Bebas Neue', cursive;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.b_third_part_right_Rey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b_third_part_right_table_Rey {
+    color: white;
+    border: 0.5px solid white;
+    border-collapse: collapse;
+    width: 80%; 
+    height: 70%;
+    margin-bottom: 7%;
+}
+
+.b_third_part_right_table_Rey td, .b_third_part_right_table_Rey th{
+    border-bottom: 0.5px solid rgb(219, 217, 217);
+    border-left: 0.5px solid rgb(219, 217, 217);
+    text-align: left;
+    padding: 0 3%;
+}
+
+.b_third_part_right_table_Rey th {
+    height: 10%;
+}
+
+
+                /*          Footer           */
+
+.b_footer_Rey {
+    height: 8vh;
+    position: absolute;
+    bottom: -199.9%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.b_footer_copyright_Rey {
+    height: 10px;
+    width: 10px;
+    margin-right: 82.7%;
+    
+}
+
+.b_footer_social_Rey a img {
+    height: 30%;
+    width: 25%;
+    margin-left: 9px;
+    filter: grayscale(100%);
+    
+}
+
+.b_footer_social_Rey a img:hover {
+    filter: none;
 }

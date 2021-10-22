@@ -147,8 +147,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-top: 4.5%;
 }
-
+.textpart2{
+    margin-top: 2%;
+}
 .boussolestatic{
     position:absolute;
     background: white;
@@ -178,3 +181,103 @@
     mix-blend-mode: multiply;
 }
 
+
+.container{
+    margin: 20px;
+    outline: none;
+}
+
+.btngo{
+    padding: 10px 25px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+
+}
+
+.btngo {
+    border: none;
+}
+.btngo:hover {
+        box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+}
+
+#modal {
+
+    left: 50%;
+    margin: -250px 5% 0 -30%;
+    opacity: 0;
+    position: absolute;
+    top: -50%;
+    visibility: hidden;
+    width: 60%; 
+    box-sizing: border-box;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+#modal:target {
+    opacity: 1;
+    top: 50%;
+    visibility: visible;
+}
+
+.btnclose, .ccheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+
+#modal h2 {
+    margin: 0;
+}
+
+#modal .btnclose {
+    float: right;
+    color: blanchedalmond;
+}
+
+#modal .copy, #modal .ccheader, #modal .ccfooter {
+    padding: 10px;
+}
+
+
+.modal-content {
+    background: black;
+    color: blanchedalmond;
+    position: relative;
+    z-index: 20;
+    
+}
+
+#modal .copy {
+    background: black;
+    color: blanchedalmond;
+    
+}
+
+#modal .overlay {
+    background-color: #000;
+    background: rgba(0,0,0,.85);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}

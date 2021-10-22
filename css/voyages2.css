@@ -268,8 +268,17 @@
 #modal .copy {
     background: black;
     color: blanchedalmond;
+    display: inline-block;
+    width: 90px;
+    text-align: center;
     
 }
+#modal input, textarea {
+    font-family: 'Oswald', sans-serif;
+    font: 1em ;
+    width: 300px;
+    box-sizing: border-box;
+  }
 
 #modal .overlay {
     background-color: #000;
@@ -280,4 +289,29 @@
     top: 0;
     width: 100%;
     z-index: 10;
+}
+.send{
+    margin: 20px;
+    outline: none;
+}
+.envoi{
+    padding: 10px 25px;
+    color: blanchedalmond;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+
+}
+
+.envoi {
+    border: none;
+}
+.envoi:hover {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
 }

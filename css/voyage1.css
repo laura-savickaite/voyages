@@ -21,6 +21,7 @@
 body {
     background-color: rgb(245, 247, 252);
 }
+
 .noise::before {
     position: fixed;
     top:0;

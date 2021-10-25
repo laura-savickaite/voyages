@@ -1,3 +1,17 @@
+    /* 
+I.General et Header
+    I.1.Réinitialisation de la page
+    I.2.Navigation bar
+II.Main
+    II.1.Titre
+    II.2.Images du titre
+    II.3.Bouton et texte
+        II.3.1.Modale
+III.Footer
+*/
+
+/* I.General et Header */
+/* I.1.Réinitialisation de la page */
 *{
     margin: 0;
     padding: 0;
@@ -11,8 +25,9 @@
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     height: 100vh;
     width: 100%;
+    scroll-behavior: smooth;
 }
-
+/* I.2.Navigation bar */
 .menuderoulant{
     margin: 0 auto;
     box-shadow: 0 10px 15px rgba(0,0,0,0.1) ;
@@ -83,9 +98,7 @@
     z-index: 4;
 }
 
-
-/* !!!!!!!!!!main contenu!!!!!!!!! */
-
+/* II.Main */
 
 .maincc{
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%) ;
@@ -95,6 +108,8 @@
     grid-template-rows: repeat(12, 1fr);
     gap: 5px;
 }
+
+/* II.1.Titre */
 
 .titlecc { 
     
@@ -113,6 +128,8 @@
     -webkit-text-stroke-color: blanchedalmond;
     
 }
+
+/* II.2.Images du titre */
 
 .pic{
     grid-column: 2 / 6;
@@ -134,6 +151,9 @@
     filter: grayscale(100%);
     
 }
+
+
+/* II.3.Bouton et texte */
 
 .booking {
     grid-column: 8 / 11;
@@ -212,6 +232,9 @@
         4px 4px 5px 0px #0001;
 }
 
+
+/* II.3.1.Modale */
+
 #modal {
 
     left: 50%;
@@ -227,6 +250,7 @@
     -webkit-transition: all 0.4s ease-in-out;
 }
 
+
 #modal:target {
     opacity: 1;
     top: 50%;
@@ -241,8 +265,6 @@
 }
 
 
-
-
 #modal h2 {
     margin: 0;
 }
@@ -252,10 +274,13 @@
     color: blanchedalmond;
 }
 
+
 #modal .copy, #modal .ccheader, #modal .ccfooter {
     padding: 10px;
 }
-
+#modal2 .copy, #modal2 .ccheader, #modal2 .ccfooter {
+    padding: 10px;
+}
 
 .modal-content {
     background: black;
@@ -265,6 +290,7 @@
     
 }
 
+
 #modal .copy {
     background: black;
     color: blanchedalmond;
@@ -273,12 +299,15 @@
     text-align: center;
     
 }
+
 #modal input, textarea {
     font-family: 'Oswald', sans-serif;
     font: 1em ;
     width: 300px;
     box-sizing: border-box;
-  }
+}
+
+
 
 #modal .overlay {
     background-color: #000;
@@ -290,6 +319,7 @@
     width: 100%;
     z-index: 10;
 }
+
 .send{
     margin: 20px;
     outline: none;
@@ -315,3 +345,19 @@
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black;
 }
+
+/* III.Footer */
+
+.low_footer{
+    background-color: #000;
+    color: blanchedalmond;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 2%;
+    
+}
+.lowfooter{
+    display: flex;
+    flex-direction: row;
+    
+}
+

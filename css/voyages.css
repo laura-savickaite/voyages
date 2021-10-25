@@ -269,21 +269,21 @@ button {
 }
 
 .b_about_img-photo-Reykjavik {
-    background-image: url(/images/reykjavik_1.jpg);
+    background-image: url(/Images/photosaccueil1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .b_about_img-photo-Edinburgh {
-    background-image: url(/images/Edimbourg_1.jpg);
+    background-image: url(/Images/photoaccueil2.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .b_about_img-photo-Chefchaoun {
-    background-image: url(/images/Chefchaoun_1.jpg);
+    background-image: url(/Images/photoaccueil3.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -11,15 +11,13 @@ html {
 }
 
 body {
-    /* background-color: white; */
     width: 100%;
     grid-column: 1 / 24;
     grid-row: 1 / 8;
     font-family: 'Bebas Neue', cursive;
-    scroll-behavior: smooth;
 }
 
-                    /*              FIRST PART           */
+/*FIRST PART*/
 
 .wrapper {
     display: grid;
@@ -43,9 +41,7 @@ body {
 }
 
 .b_aside_content {
-    /* grid-column: 1 / 6; */
     color: white;
-    font-family: 'Bebas Neue', cursive;
     margin: 0 10% 15% 10% ;
 }
 
@@ -58,47 +54,61 @@ body {
     background-repeat: no-repeat;
 }
 
-.b_righ_black_box {
+.b_right_black_box {
     display: flex;
     flex-direction: column;
     padding: 15% 15%;
-    /* justify-content: center;
-    align-items: center; */
     grid-column: 19 / 22;
     grid-row: 7 / 9;
     background-color: black;
 }
 
-.b_righ_black_box > h2 {
+.b_right_black_box > h2 {
     color: white;
-    font-family: 'Bebas Neue', cursive;
     font-weight: lighter;
     font-size: 10px;
     margin-bottom: 15%;
-    /* transform: translate(-52px,-35px); */
 }
 
-.b_righ_black_box > h3 {
+.b_right_black_box > h3 {
     color: white;
-    font-family: 'Bebas Neue', cursive;
     font-size: 25px;
     font-weight: lighter;
 }
 
-.b_righ_black_box_arrow {
+.b_right_black_box_arrow {
     height: 15%;
     width: 15%;
     margin-top: 10%;
     transition: 0.4s ease-in-out;
+    box-shadow: rgba(red, green, blue, alpha);
 }
 
-.b_righ_black_box_arrow:hover {
+.b_right_black_box_arrow {
+        height: 20%;
+        width: 20%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        filter: sepia(100%) brightness(30%) saturate(10%);
+    }
+    50% {
+        filter: sepia(100%) brightness(179%) saturate(639%)
+    }
+    100% {
+        filter: sepia(100%) brightness(30%) saturate(10%);
+    }
+}
+
+.b_right_black_box_arrow:hover {
     transform: rotate(90deg);
     transition: 0.5s ease-in-out;
     cursor: pointer;
 }
 
-.b_righ_black_img {
+.b_right_black_img {
     grid-column: 22 / 25;
     grid-row: 7 / 9;
     background-image: url(/Images/Iceland_beach2.jpg);
@@ -108,7 +118,6 @@ body {
 }
 
 .b_header_Rey {
-    /* position: fixed; */
     height: 10vh;
     grid-column: 4 / 24;
     grid-row: 1 / 2;
@@ -118,10 +127,22 @@ body {
     grid-column: 2 / 8;
     grid-row: 2 / 3;
     color: white;
-    font-family: 'Bebas Neue', cursive;
     font-size: 150px;
     margin-left: 19.8%;
-    
+    animation-name: title-reveal;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+@keyframes title-reveal {
+    0%  { 
+        opacity: 0.0;
+        transform: translate(0, -100%);
+      }
+    100%  { 
+        opacity: 1.0;
+        transform: translate(0, 0%);
+    }
 }
 
 .b_tittle_left {
@@ -134,7 +155,7 @@ body {
     transition: 0.5s;
 }
 
-        /*              NAV              */
+/*NAV*/
 nav {
     /* background: rgb(255, 255, 255); */
     height: 100%;
@@ -191,13 +212,12 @@ nav ul ul ul li {
 ul li a:hover {
     color: red;
 } 
-            /*         SECOND PART            */
+/*SECOND PART*/
 
 .b_main_Rey {
     height: 100vh;
     width: 100%;
 }
-
 
 .b_main_article_Rey {
     width: 100%;
@@ -213,7 +233,6 @@ ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     padding: 20%;
 }
 
@@ -245,7 +264,6 @@ ul li a:hover {
     height: 100%;
     grid-column: 11 / 23;
     grid-row: 2 / 8 ;
-
 }
 
 .b_main_article_aside_Rey {
@@ -257,6 +275,7 @@ ul li a:hover {
     font-size: 120px;
     letter-spacing: 10px;
     transform: translate(0, -8%);
+    transform: rotate(180deg);
 }
 
 .b_main_article_aside_Rey p {
@@ -265,7 +284,7 @@ ul li a:hover {
   -webkit-text-stroke-color: black;
 }
 
-                /*          THIRD PART       */
+/*THIRD PART*/
 
 .b_third_part_Rey {
     display: grid;
@@ -295,8 +314,28 @@ ul li a:hover {
 .b_third_part_top_Rey {
     grid-column: 9 / 25;
     grid-row: 1/ 2;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url(/Images/Reykjavik.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
+
+.b_third_part_top_title_Rey {
+    color: white;
+    margin-top: 3%;
+    font-size: 50px;
+    margin-right: 3%;
+    letter-spacing: 3px;
+}
+
+.b_third_part_top_title_Rey span {
+    color: rgb(237, 173, 2);
+}
+
 
 .b_third_part_form_btn {
     outline: 0;
@@ -308,7 +347,6 @@ ul li a:hover {
 .b_third_part_form_send {
     margin-top: 20%;
     padding: 5% 42%;
-    font-family: 'Bebas Neue', cursive;
     background-color: black;
     color: white;
     border: none;
@@ -340,8 +378,7 @@ ul li a:hover {
     height: 10%;
 }
 
-
-                /*          Footer           */
+/*Footer*/
 
 .b_footer_Rey {
     height: 8vh;
@@ -367,7 +404,6 @@ ul li a:hover {
     width: 25%;
     margin-left: 9px;
     filter: grayscale(100%);
-    
 }
 
 .b_footer_social_Rey a img:hover {

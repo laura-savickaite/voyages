@@ -21,9 +21,16 @@
 
  VIII. TROISIEME PARTIE DU MAIN
     1. carousel
+    2. contenu
+        a. formulaire
+        b. table
+    3. carte perso 
 
    IX. FOOTER
 */
+
+
+
 
 @font-face {
     font-family: Faktum;
@@ -563,6 +570,12 @@ article .wave.wave4 {
     height: 100vh;
 }
 
+.misepagepres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 #container {
     display: flex;
     justify-content: center;
@@ -581,7 +594,7 @@ article .wave.wave4 {
     position: relative;
 }
             
-#carousel, #navigation {
+#carousel {
     flex: initial;
     display: block;
 }
@@ -592,50 +605,16 @@ article .wave.wave4 {
     height: 400px;
     border-radius: 4px;
     background-color: rgb(229, 229, 220);
-}
-            
-.p-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.4s ease-in-out;
-}
-            
-#button_a:checked ~ #carousel .p-wrapper .imgtest {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); 
-}
-            
-#button_b:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%); 
-}
-
-#button_c:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(-200%);
-    transform: translateY(-200%); 
-}
-
-#button_d:checked ~ #carousel .p-wrapper {
-    -webkit-transform: translateY(-300%);
-    transform: translateY(-300%); 
-}
+}         
             
 [class^="panel_"] {
-    overflow: auto;
     position: relative;
     width: inherit;
     height: inherit;
     padding: 48px;
 }
-            
-#navigation {
-    margin-left: 24px;
-}
 
 [class^="label_"] {
-    display: block;
-    cursor: pointer;
     margin: 8px 0;
     width: 32px;
     height: 32px;
@@ -644,22 +623,9 @@ article .wave.wave4 {
     border-radius: 4px;
     color: #aaa;
     background-color: #fff;
-    transition: all 0.3s ease;
 }
-            
-[class^="label_"]:hover {
-    color: #444;
-    background-color: #759170;
-}
-            
-#button_a:checked ~ #navigation .label_a,
-#button_b:checked ~ #navigation .label_b,
-#button_c:checked ~ #navigation .label_c,
-#button_d:checked ~ #navigation .label_d {
-     cursor: default;
-     color: #fff;
-     background-color: #222;
-}
+                       
+
 
 #testimg {
     display: flex;
@@ -670,7 +636,78 @@ article .wave.wave4 {
     /* margin-top: -7%; */
     border-radius: 3px;
 }
+/* VIII. TROISIEME PARTIE DU MAIN
+    2. contenu
+    a. formulaire*/
+#formulaire {
+    display: flex;
+    flex-direction: column;
+    margin: 8%;
+}
 
+.valeur {
+    border-width: 0 0 1px;
+    outline: none;
+    background: transparent;
+}
+
+input {
+    margin-bottom: 30px;
+}
+
+.panel_a a {
+    background-color: rgb(168, 107, 79);
+    text-decoration: none;
+    color: white;
+    padding: 10px 8px;
+    border-radius: 3px;
+    margin-left: 45%;
+}
+/* VIII. TROISIEME PARTIE DU MAIN
+    2. contenu
+    b. table*/
+
+
+
+/* VIII. TROISIEME PARTIE DU MAIN
+    3. carte perso*/
+
+.imagepres {
+    height: 150px;
+    width: 150px; 
+
+    }
+.imagepres img {
+    height: 100%;
+    width:100%;
+    /* POUR QUE L'IMAGE NE SOIT PAS DISTORT */
+    object-fit: cover;
+    border-radius: 50%;
+    }
+
+.imagepres img:hover {
+    padding: 5px;
+}
+
+#petittxt {
+    display:none;
+}
+.imagepres:hover + #petittxt {
+    display: block;
+    transition: 0.50s;
+}
+
+h3 {
+    font-family: CakoThin;
+    font-size: 30px;
+}
+
+.card-pres {
+    width: 150px;
+    text-align: center;
+    margin-right: -30%;
+    margin-top: 5%;
+}
 
 
 

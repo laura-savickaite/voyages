@@ -235,11 +235,17 @@ III.Footer
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
+    box-shadow: 
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
 
 }
 
 .btngo {
     border: none;
+    box-shadow: 
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
 }
 .btngo:hover {
         box-shadow:
@@ -366,8 +372,8 @@ III.Footer
 /* III.Footer */
 
 .low_footer{
-    background-color: #000;
-    color: blanchedalmond;
+    background-color: #e2d1c3e7;
+    color: black;
     font-family: 'Oswald', sans-serif;
     padding-left: 2%;
     
@@ -375,6 +381,15 @@ III.Footer
 .lowfooter{
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
 }
 
+.imgfootercc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+.ccinsta, .cctwit, .ccfb{
+    padding: 2%;
+}

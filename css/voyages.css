@@ -353,7 +353,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 8vh;
+    height: 9vh;
     width: 100%;
     background-color: rgb(255, 255, 255);
     /* margin: 1% 0 1% 1%; */
@@ -381,11 +381,16 @@ button {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     margin-left: 1%;
 }
 
 .b_footer_social a img {
     height: 30%;
-    width: 25%;
-    margin-left: 9px;
+    width: 20%;
+    margin-left: 4px;
+}
+
+.b_footer_social {
+    width: 40%;
 }

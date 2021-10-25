@@ -148,8 +148,7 @@ III.Footer
     width: 100%;
     height: auto;
     -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
-    
+    filter: grayscale(100%);   
 }
 
 
@@ -186,10 +185,12 @@ III.Footer
     grid-row: 10 / 10;
     mix-blend-mode: multiply;
 }
+
 .desert{
     margin-top: 2%;
     grid-column: 4 / 9;
     grid-row: 9 / 11;
+    
 }
 .desertstyle{
     width: 100% ;
@@ -199,6 +200,22 @@ III.Footer
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
     mix-blend-mode: multiply;
+    z-index: 1;
+    transition: all 0.5s ease;
+    
+}
+.desertstyle:hover{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+    margin-top: 2%;
+    grid-column: 4 / 9;
+    grid-row: 9 / 11;
+    z-index: 1;
 }
 
 

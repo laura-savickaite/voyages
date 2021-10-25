@@ -79,7 +79,6 @@ nav {
 
 nav ul {
     float: left;
-    /* line-height: 90px;  */
 }
 
 nav ul li {
@@ -90,7 +89,6 @@ nav ul li {
 
 nav ul li a {
     width: 148px;  
-    /* height: 25px;   */
     display: block;  
     text-align: center;  
     font-family: 'Oswald', sans-serif;  
